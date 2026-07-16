@@ -3,7 +3,9 @@ const APP_SHELL = [
   './',
   './pingpong-ai-training-prototype.html',
   './manifest.webmanifest',
-  './app-icon.svg'
+  './app-icon.svg',
+  './brand-logo-white.png',
+  './brand-logo-black.png'
 ];
 
 self.addEventListener('install', event => {
