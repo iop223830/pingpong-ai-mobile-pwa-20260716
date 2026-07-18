@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pingpong-ai-training-v11';
+const CACHE_NAME = 'pingpong-ai-training-v14';
 const APP_SHELL = [
   './',
   './pingpong-ai-training-prototype.html',
