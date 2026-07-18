@@ -1,19 +1,12 @@
-$source = 'C:\Users\如月真绫\Documents\Codex\2026-07-15\files-mentioned-by-the-user-codex\outputs'
-$repo = 'C:\Users\如月真绫\Documents\Codex\2026-07-15\files-mentioned-by-the-user-codex\work\github-pages-deploy'
-
-$files = @(
-  'index.html',
-  'pingpong-ai-training-prototype.html',
-  'manifest.webmanifest',
-  'sw.js',
-  'brand-logo-transparent.png'
-)
-
-foreach ($file in $files) {
-  Copy-Item -LiteralPath (Join-Path $source $file) `
-    -Destination (Join-Path $repo $file) -Force
-}
-
-git -C $repo add -- $files
-git -C $repo commit --only -m "Update complete transparent logo" -- $files
-git -C $repo push origin main
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=./pingpong-ai-training-prototype.html">
+  <title>正在打开乒乓智评</title>
+</head>
+<body>
+  <p><a href="./pingpong-ai-training-prototype.html">打开乒乓智评</a></p>
+</body>
+</html>
