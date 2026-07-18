@@ -11,10 +11,10 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "./app-icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "src": "./brand-logo-transparent.png",
+      "sizes": "6105x2131",
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }

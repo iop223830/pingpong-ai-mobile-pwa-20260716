@@ -1,16 +1,12 @@
-$source = "C:\Users\如月真绫\Documents\Codex\2026-07-15\files-mentioned-by-the-user-codex\outputs"
-$repo = "C:\Users\如月真绫\Documents\Codex\2026-07-15\files-mentioned-by-the-user-codex\work\github-pages-publish"
-
-git clone https://github.com/iop223830/pingpong-ai-mobile-pwa-20260716.git $repo
-
-Copy-Item "$source\pingpong-ai-training-prototype.html" "$repo\pingpong-ai-training-prototype.html" -Force
-Copy-Item "$source\manifest.webmanifest" "$repo\manifest.webmanifest" -Force
-Copy-Item "$source\sw.js" "$repo\sw.js" -Force
-Copy-Item "$source\app-icon.svg" "$repo\app-icon.svg" -Force
-Copy-Item "$source\brand-logo-white.png" "$repo\brand-logo-white.png" -Force
-Copy-Item "$source\brand-logo-black.png" "$repo\brand-logo-black.png" -Force
-
-Set-Location $repo
-git add .
-git commit -m "Update latest mobile PWA and centered logo"
-git push origin main
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=./pingpong-ai-training-prototype.html">
+  <title>正在打开乒乓智评</title>
+</head>
+<body>
+  <p><a href="./pingpong-ai-training-prototype.html">打开乒乓智评</a></p>
+</body>
+</html>

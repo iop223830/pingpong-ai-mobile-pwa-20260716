@@ -1,11 +1,9 @@
-const CACHE_NAME = 'pingpong-ai-training-v1';
+const CACHE_NAME = 'pingpong-ai-training-v11';
 const APP_SHELL = [
   './',
   './pingpong-ai-training-prototype.html',
   './manifest.webmanifest',
-  './app-icon.svg',
-  './brand-logo-white.png',
-  './brand-logo-black.png'
+  './brand-logo-transparent.png'
 ];
 
 self.addEventListener('install', event => {
@@ -14,7 +12,10 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('activate', event => {
-  event.waitUntil(self.clients.claim());
+  event.waitUntil(
+    caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key))))
+      .then(() => self.clients.claim())
+  );
 });
 
 self.addEventListener('fetch', event => {
